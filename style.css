@@ -1,0 +1,104 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-image: url(IMG_0424.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 10vh;
+  border-radius: 15px;
+}
+.cabecalho {
+  width: 100%;
+  height: 75px;
+  background-color: #f5e8d5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50 50px;
+  box-sizing: border-box;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  background-color: #164f49;
+  color: #f5e8d5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+}
+
+.logo-texto h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  color: #302c27;
+}
+
+.logo-texto span {
+  display: block;
+  margin-top: 4px;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #77716a;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #49443e;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.menu a.ativo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #164f49;
+}
+
+.menu a:hover {
+  color: #164f49;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    height: auto;
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
